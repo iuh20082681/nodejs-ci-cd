@@ -2,9 +2,15 @@ import express from "express";
 import cors from "cors";
 
 const app = express();
+const corsConfigs = {
+  origin: "*",
+  methods: ["GET", "POST"],
+  credentials: true,
+};
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsConfigs));
+app.options("*", cors(corsConfigs));
 
 app.post("/api/v1/users", (req, res) => {
   res.contentType("application/json");
