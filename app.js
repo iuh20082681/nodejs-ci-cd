@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cors());
 
 app.post("/api/v1/users", (req, res) => {
-  res.contentType("application/json");
+  // res.contentType("application/json");
   return res.status(400).send({});
 });
 
