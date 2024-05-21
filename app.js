@@ -7,8 +7,8 @@ app.use(express.json());
 app.use(cors());
 
 app.post("/api/v1/users", (req, res) => {
-  res.contentType("application/json");
-  return res.status(200).send({});
+  // res.contentType("application/json");
+  // return res.status(200).send({});
 });
 
 app.get("/api/v1/users", (req, res) => {
