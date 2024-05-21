@@ -8,7 +8,9 @@ app.use(cors());
 
 app.post("/api/v1/users", (req, res) => {
   res.contentType("application/json");
-  return res.status(200).send({});
+  return res.status(200).send({
+    message: "User created successfully",
+  });
 });
 
 app.get("/api/v1/users", (req, res) => {
