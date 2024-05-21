@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "type": "module",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "dev": "nodemon --experimental-modules server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "vercel-build": "echo hello"
   },
   "keywords": [],
   "author": "",
