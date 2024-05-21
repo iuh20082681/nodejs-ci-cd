@@ -23,7 +23,7 @@ app.get("/api/v1/users", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  return res.send("Hello World!");
+  return res.send("Hello World bros!");
 });
 
 export default app;
