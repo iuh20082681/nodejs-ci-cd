@@ -13,7 +13,7 @@ app.post("/api/v1/users", (req, res) => {
 
 app.get("/api/v1/users", (req, res) => {
   console.log("call");
-  return res.send("Hello World!");
+  return res.send("Hello users!");
 });
 
 app.get("/", (req, res) => {
